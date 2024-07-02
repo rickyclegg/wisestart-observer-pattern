@@ -45,6 +45,6 @@ Keep running the application and see your output.
 ### Part 3: BONUS
 1. Update registerObserver to not allow duplicate clients.
 2. Add another StockMarket.
-3. Inject the clients so that they can listen to both StockMarkets.
+3. Inject the clients into the StockMarket constructor so that they can listen to both StockMarkets. You can assume that all clients trade all stocks in a market.
 
 If you want to see the final solution, checkout the `solution` branch.

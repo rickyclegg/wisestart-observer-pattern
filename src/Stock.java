@@ -1,13 +1,14 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class Stock implements Subject {
-    private List<Observer> observers;
+    private final HashSet<Observer> observers;
     private float price;
     private String stockName;
 
     public Stock(String stockName) {
-        this.observers = new ArrayList<>();
+        this.observers = new HashSet<>();
         this.stockName = stockName;
     }
 
